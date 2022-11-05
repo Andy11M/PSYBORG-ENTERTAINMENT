@@ -18,7 +18,7 @@ p {
 .big-heading {
   font-family: "Ubuntu";
   color: white;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   line-height: 1.5;
 }
 
@@ -30,7 +30,7 @@ p {
 /* Containers */
 
 .container-fluid{
-  padding: 7% 10%;
+  padding: 7% 7.5%;
 }
 
 /* Sections */
@@ -46,7 +46,11 @@ p {
 .white-section{
   background-size: 80rem;
 }
+.grad-section{
+  background-color: purple; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, blue, purple);
 
+}
 
 /* Navigation Bar */
 
@@ -74,12 +78,27 @@ p {
 
 /* Buttons */
 
-.
-
+.bg-primary {
+    background-color: #C0C0C0!important;
+}
+.bg-dark{
+  background-color: #CBB989!important;
+}
+.bg-white{
+  background-color: #aebbff!important;
+}
+.bg-danger{
+  background-color: #81571E!important;
+}
+.bg-info{
+  background-color: #6F000B!important;
+}
+.bg-warning{
+  background-color: #A7967D!important;
+}
 /* Title Section */
 
 #title {
-
   color: white;
   text-align: left;
 }
@@ -98,21 +117,28 @@ p {
 }
 
 /* Features Section */
-
+#features{
+  padding: 1px;
+}
 
 .icon {
   color: #ef8172;
-  margin-bottom: 1rem;
+  margin-bottom: 30rem;
 }
 
 .icon:hover {
   color: #ff4c68;
 }
 
+.iconos{
+  color: black;
+}
+
 
 #photos {
   background-color: #ef8172;
   padding-bottom: 3%;
+  padding-top: 0px;
 }
 
 
@@ -145,23 +171,25 @@ video {
   bottom: 0;
   z-index: -1;
 
-#Footer {
+#footer {
 
 }
 
-
+.testimonial-image{
+  margin:30px;
+}
 
 #cta {
   padding: 1%;
-}
-
 
 }
+
 .social-icon{
-  margin:20px;
-  padding-bottom: 10px;
+  margin: 300px;
 }
-
+.fa-solid{
+  color: black;
+}
 @media (max-width: 1028px) {
 
   #title {
