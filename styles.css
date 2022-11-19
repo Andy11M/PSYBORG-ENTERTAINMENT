@@ -1,6 +1,6 @@
 
 body {
-  font-family: "Ubuntu";
+  font-family: "Quicksand";
   text-align: center;
 
 }
@@ -9,9 +9,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu";
 }
 
+h3{
+  font-size: 1.7;
+  font-style: oblique;
+}
+
 p {
   color: white;
+  font-size: 1.5rem;
 }
+
 
 /* Headings */
 
@@ -24,7 +31,6 @@ p {
 
 .section-heading {
   font-size: 3rem;
-  line-height: 1.5;
 }
 
 /* Containers */
@@ -48,14 +54,12 @@ p {
 }
 .grad-section{
   background-color: purple; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, blue, purple);
-
+  background-image: linear-gradient(to bottom right, blue, green);
 }
-
 /* Navigation Bar */
 
 .navbar {
-  padding: 0 0 4.5rem;
+  padding: 0 0 1rem;
 }
 
 .navbar-brand {
@@ -74,6 +78,22 @@ p {
   font-size: 1.2rem;
   font-family: "Ubuntu";
   color:white;
+}
+
+#title {
+  color: white;
+  text-align: left;
+  padding: 0%;
+}
+
+#title .container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+#fotologo .container-fluid{
+  padding: 0% 0%,
 }
 
 /* Buttons */
@@ -96,29 +116,29 @@ p {
 .bg-warning{
   background-color: #A7967D!important;
 }
-/* Title Section */
-
-#title {
-  color: white;
+/* FONDO*/
+#fotologo{
+  background-image: url(fondito.JPEG);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
   text-align: left;
+
 }
 
-#title .container-fluid {
-  padding: 3% 15% 7%;
-}
+#fotologo .social-icon{
+  color: yellow;
+  text-align: center;
 
-/* Title Image */
-
-.title-image {
-  width: 60%;
-  transform: rotate(25deg);
-  position: absolute;
-  right: 30%;
 }
 
 /* Features Section */
-#features{
-  padding: 1px;
+
+
+#fotologo h1{
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: oblique;
 }
 
 .icon {
@@ -130,25 +150,35 @@ p {
   color: #ff4c68;
 }
 
-.iconos{
-  color: black;
-}
-
-
-#photos {
-  background-color: #ef8172;
+#Photos .container-fluid{
+  background-color: #black;
   padding-bottom: 3%;
   padding-top: 0px;
+
 }
 
-
-/* Pricing Section */
+#features .container-fluid{
+  background-color: #black;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
 
 #pricing {
-  padding: 10px;
+  padding-bottom: 0%;
+  padding-top: 3%;
 }
+
 #package{
-  padding: 10px;
+  padding-bottom: 3%;
+  padding-top: 0%;
+}
+
+#cta .container-fluid{
+  padding: 2%;
+}
+
+#footer .container-fluid{
+  padding:2%;
 }
 
 .price-text {
@@ -157,39 +187,24 @@ p {
 }
 
 .pricing-column {
-  padding: 3% 2%;
-}
-
-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-
-#footer {
-
+  padding: 4%;
 }
 
 .testimonial-image{
   margin:30px;
 }
 
-#cta {
-  padding: 1%;
-
+.fa-solid{
+  color: red;
 }
+
 
 .social-icon{
-  margin: 300px;
+  margin: 30px;
 }
-.fa-solid{
-  color: black;
-}
+
+
+
 @media (max-width: 1028px) {
 
   #title {
@@ -197,7 +212,5 @@ video {
   }
 
   .title-image {
-    position: static;
-    transform: rotate(0);
-  }
+  align-items: center;
 }
