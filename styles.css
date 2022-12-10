@@ -118,16 +118,16 @@ p {
 }
 /* FONDO*/
 #fotologo{
-  background-image: url(fondito.JPEG);
+  background-image: url(fondito4.jpg);
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
-  text-align: left;
+  text-align: center;
 
 }
 
 #fotologo .social-icon{
-  color: yellow;
+  color: orange;
   text-align: center;
 
 }
@@ -195,7 +195,7 @@ p {
 }
 
 .fa-solid{
-  color: red;
+  color: orange;
 }
 
 
@@ -203,6 +203,9 @@ p {
   margin: 30px;
 }
 
+#cta h2 , h3{
+  color: orange;
+}
 
 
 @media (max-width: 1028px) {
